@@ -4,7 +4,14 @@
   "description": "\"Bul' Budget\" est une application intuitive et conviviale conçue pour vous aider à gérer votre budget mensuel de manière simple et efficace. Grâce à son interface moderne et son approche pratique, elle vous permet de suivre vos dépenses en temps réel.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:client": "npm run dev --prefix client",
+    "start:server": "npm run start:dev --prefix server",
+    "dev": "concurrently \"npm run start:client\" \"npm run start:server\"",
+    "test": "npm run test --prefix server",
+    "test:watch": "npm run test:watch:server",
+    "test:debug": "npm run test:debug:server",
+    "test:watch:server": "npm run test:watch --prefix server",
+    "test:debug:server": "npm run test:debug --prefix server"
   },
   "repository": {
     "type": "git",
@@ -24,5 +31,8 @@
   "bugs": {
     "url": "https://github.com/cat-code-fr/bulbudget/issues"
   },
-  "homepage": "https://github.com/cat-code-fr/bulbudget#readme"
+  "homepage": "https://github.com/cat-code-fr/bulbudget#readme",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
 }
