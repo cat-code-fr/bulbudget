@@ -1,0 +1,28 @@
+{
+  "name": "bulbudget",
+  "version": "0.0.1",
+  "description": "\"Bul' Budget\" est une application intuitive et conviviale conçue pour vous aider à gérer votre budget mensuel de manière simple et efficace. Grâce à son interface moderne et son approche pratique, elle vous permet de suivre vos dépenses en temps réel.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cat-code-fr/bulbudget.git"
+  },
+  "keywords": [
+    "React.js",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Nest.js",
+    "TypeORM",
+    "TypeScript"
+  ],
+  "author": "Cat Code",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cat-code-fr/bulbudget/issues"
+  },
+  "homepage": "https://github.com/cat-code-fr/bulbudget#readme"
+}
