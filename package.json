@@ -34,5 +34,8 @@
   "homepage": "https://github.com/cat-code-fr/bulbudget#readme",
   "devDependencies": {
     "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0"
   }
 }
